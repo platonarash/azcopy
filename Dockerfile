@@ -8,7 +8,7 @@ RUN apt-get update \
 
 RUN set -ex \
     && curl -L -o azcopy.tar.gz \
-    https://aka.ms/downloadazcopylinux64 \
+    https://aka.ms/downloadazcopy-v10-linux \
     && tar -xf azcopy.tar.gz && rm -f azcopy.tar.gz \
     && ./install.sh && rm -f install.sh \
     && rm -rf azcopy
